@@ -1,7 +1,7 @@
 import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
+//import { APIProvider, Map, Marker } from "@vis.gl/react-google-maps";
 import axios from "axios";
 import DialogButton from "../components/DialogButton";
 import Section from "@/components/Section";
@@ -16,7 +16,7 @@ interface FormData {
 }
 
 function Contact() {
-  const coordinates = { lat: -18.968550280449715, lng: 32.67361752400556 }; // Example coordinates for Mutare, Zimbabwe
+  //const coordinates = { lat: -18.968550280449715, lng: 32.67361752400556 }; // Example coordinates for Mutare, Zimbabwe
   const [openDialog, setOpenDialog] = useState(false);
   const [gotError, setGotError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
