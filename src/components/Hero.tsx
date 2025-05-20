@@ -21,7 +21,7 @@ const Hero = () => {
           <SlideIn direction="left" delay={0.4}>
             <div className="flex gap-3.5">
               <a
-                href="/login"
+                href="https://calendly.com/wanigmena/30min"
                 className="py-2 px-4 rounded-md bg-black text-white font-semibold inline-block"
               >
                 Book a Consultation

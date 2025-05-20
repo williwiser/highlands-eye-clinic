@@ -59,7 +59,7 @@ const Navigation = () => {
         </ul>
         <div className="md:flex hidden  flex-1 justify-end items-center">
           <a
-            href="/login"
+            href="https://calendly.com/wanigmena/30min"
             className="py-2 px-4 rounded-md bg-black text-white font-semibold"
           >
             Book a Consultation

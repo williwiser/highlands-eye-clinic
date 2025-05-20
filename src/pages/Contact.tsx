@@ -7,7 +7,7 @@ import DialogButton from "../components/DialogButton";
 import Section from "@/components/Section";
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState } from "react";
-import { BACKEND_BASE_URL } from "@/utilities/constants";
+import { BACKEND_BASE_URL } from "../utilities/constants";
 
 interface FormData {
   name: string;
