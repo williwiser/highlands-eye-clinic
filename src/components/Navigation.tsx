@@ -15,7 +15,7 @@ const Navigation = () => {
       <div className="container mx-auto max-w-6xl flex py-2 items-center">
         <div className="flex flex-1">
           <a href="/">
-            <img src="logo.png" className=" size-16" />
+            <img src="logo.webp" className=" size-16" />
           </a>
         </div>
         <button

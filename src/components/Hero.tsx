@@ -32,7 +32,7 @@ const Hero = () => {
               </a>
               <a
                 href="/contact"
-                className="border border-gray-500 py-2 px-4 rounded-md font-semibold inline-block"
+                className="border border-gray-500 py-2 px-4 rounded-md font-semibold inline-block hover:bg-white hover:border-white transition-colors duration-200"
               >
                 Contact Us
               </a>

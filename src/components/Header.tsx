@@ -1,5 +1,6 @@
 interface HeaderProps {
   title?: string;
+  desc?: string;
 }
 
 const Header = (props: HeaderProps) => {
@@ -10,6 +11,7 @@ const Header = (props: HeaderProps) => {
           <h1 className="text-7xl  text-pretty quicksand-500 text-center">
             {props.title}
           </h1>
+          {props.desc ? <p className="text-gray-600">{props.desc}</p> : ""}
         </div>
       </div>
     </header>

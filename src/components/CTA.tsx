@@ -5,7 +5,7 @@ const CTA = () => {
         background: `linear-gradient(
       rgba(0, 0, 0, 0.4), 
       rgba(0, 0, 0, 0.4)
-    ), url('lady.png')`,
+    ), url('lady.webp')`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -23,7 +23,7 @@ const CTA = () => {
             today — your eyes will thank you!
           </p>
           <a
-            href="/login"
+            href="https://calendly.com/wanigmena/30min"
             className="py-2 px-4 mt-4 rounded-md bg-black text-white font-semibold inline-block"
           >
             Book a Consultation
