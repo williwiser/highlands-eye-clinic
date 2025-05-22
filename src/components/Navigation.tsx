@@ -11,11 +11,11 @@ const Navigation = () => {
     "flex flex-1 flex-col md:flex-row md:justify-center md:gap-6 absolute md:static w-full top-24 md:top-0 bg-white h-screen md:h-full z-100 border-t md:border-none";
 
   return (
-    <nav className="fixed w-full z-10 bg-white border-b border-gray-200">
+    <nav className="fixed w-full z-10 border-b bg-white border-gray-200">
       <div className="container mx-auto max-w-6xl flex py-2 items-center">
         <div className="flex flex-1">
           <a href="/">
-            <img src="logo.png" className=" size-20" />
+            <img src="logo.png" className=" size-16" />
           </a>
         </div>
         <button
@@ -44,7 +44,7 @@ const Navigation = () => {
               <Link
                 to={to}
                 className={`group relative w-full h-full p-4 md:p-0 inline-block ${
-                  isActive(to) ? "text-gray-800" : "text-gray-400"
+                  isActive(to) ? "text-gray-800" : "text-gray-600"
                 }`}
               >
                 {label}

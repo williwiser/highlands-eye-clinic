@@ -2,20 +2,24 @@ import SlideIn from "./SlideIn";
 
 const Hero = () => {
   return (
-    <header className="h-[95dvh] overflow-hidden bg-gradient-to-b from-[#d3d2d2] to-[#dcdcdc]">
+    <header
+      className="h-[95dvh] overflow-hidden "
+      style={{
+        backgroundColor: "#dbe2e5",
+        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236797c1' fill-opacity='0.36' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")`,
+      }}
+    >
       <div className="container mx-auto max-w-6xl flex justify-between items-center pt-24 px-2 h-full">
         <div className="flex flex-col text-center lg:text-left items-center lg:items-start gap-5 flex-1">
           <SlideIn direction="left">
-            <h1 className="text-7xl text-pretty rubik-600 text-stone-800">
-              Your Vision
-              <br />
-              Our Priority.
+            <h1 className="text-6xl text-pretty rubik-600 text-stone-800">
+              Where Your Vision Is Our Mission.
             </h1>
           </SlideIn>
           <SlideIn direction="left" delay={0.2}>
-            <p className="text-gray-600">
-              Easy appointments, modern tech, and a caring team—all in one
-              place.
+            <p className="text-slate-600">
+              We provide comprehensive eye exams, prescriptions, and advanced
+              diagnostics with precision, care, and expert attention.
             </p>
           </SlideIn>
           <SlideIn direction="left" delay={0.4}>
@@ -36,11 +40,13 @@ const Hero = () => {
           </SlideIn>
         </div>
 
-        <img
-          src="lady2.png"
-          className="hidden lg:block max-w-xl relative bottom-16"
-          alt="Eye Care"
-        />
+        <div className="h-full flex">
+          <img
+            src="eye_girl.webp"
+            className="hidden lg:block max-w-xl relative bottom-0 object-cover"
+            alt="Eye Care"
+          />
+        </div>
       </div>
     </header>
   );

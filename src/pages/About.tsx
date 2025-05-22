@@ -21,35 +21,47 @@ function About() {
             </p>
           </div>
           <img
-            src="opth.jpg"
-            className="hidden md:block max-w-md rounded-md"
+            src="sasu.jpg"
+            className="hidden md:block max-w-lg w-full rounded-md max-h-[300px] object-cover"
             alt="Eye Care"
           />
         </div>
       </Section>
       <Section title="Vision and Mission" bg="slate-200">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 text-gray-700">
-          <div>
-            <h3 className="text-2xl text-center md:text-left font-semibold text-gray-800 mb-3">
-              Our Vision
-            </h3>
-            <p className="text-center md:text-left">
+        <div className="flex justify-between items-center gap-8 w-full mb-8 bg-slate-300 overflow-hidden rounded-md">
+          <img
+            src="opth.jpg"
+            className="hidden md:block max-w-lg max-h-[300px] w-full object-cover"
+            alt="Eye Care"
+          />
+          <div className="flex flex-col gap-3 p-4 overflow-hidden">
+            <h1 className="font-semibold text-5xl text-center md:text-left">
+              Vision
+            </h1>
+            <p className="max-w-xl text-center md:text-left text-gray-700">
+              To provide comprehensive eye care through skilled diagnosis,
+              effective treatment, and patient-centered care, while promoting
+              education, research, and outreach in the communities we serve.
+            </p>
+          </div>
+        </div>
+        <div className="flex justify-between items-center gap-8 w-full mb-8 bg-slate-300 overflow-hidden rounded-md">
+          <div className="flex flex-col gap-3 p-4 justify-center">
+            <h1 className="font-semibold text-5xl text-center md:text-left">
+              Mission
+            </h1>
+            <p className="max-w-xl text-center md:text-left text-gray-700">
               To become a leading center of excellence in eye care across
               Zimbabwe and the region, delivering accessible, affordable, and
               high-quality ophthalmic services that prevent blindness and
               improve lives.
             </p>
           </div>
-          <div>
-            <h3 className="text-2xl text-center md:text-left font-semibold text-gray-800 mb-3">
-              Our Mission
-            </h3>
-            <p className="text-center md:text-left">
-              To provide comprehensive eye care through skilled diagnosis,
-              effective treatment, and patient-centered care, while promoting
-              education, research, and outreach in the communities we serve.
-            </p>
-          </div>
+          <img
+            src="phoroptor.jpg"
+            className="hidden md:block max-w-lg max-h-[300px] w-full object-cover"
+            alt="Eye Care"
+          />
         </div>
       </Section>
 

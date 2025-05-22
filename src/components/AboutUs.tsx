@@ -29,6 +29,7 @@ const AboutUs = () => {
           <SlideIn direction="right" delay={0.2}>
             <img
               src="eye_bg.jpg"
+              loading="lazy"
               className="hidden md:block max-w-md rounded-md"
               alt="Eye Care"
             />
