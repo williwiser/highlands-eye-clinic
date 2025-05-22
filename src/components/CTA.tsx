@@ -1,16 +1,6 @@
 const CTA = () => {
   return (
-    <section
-      style={{
-        background: `linear-gradient(
-      rgba(0, 0, 0, 0.4), 
-      rgba(0, 0, 0, 0.4)
-    ), url('lady.webp')`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-      className="bg-cover bg-center overflow-hidden"
-    >
+    <section className="bg-cover bg-center overflow-hidden bg-gray-800">
       <div className="container mx-auto max-w-6xl flex flex-col items-center px-2 py-8 h-full text-white gap-8">
         <h1 className="font-semibold text-5xl text-center">
           Ready to Take Care of Your Eyes?
@@ -24,7 +14,7 @@ const CTA = () => {
           </p>
           <a
             href="https://calendly.com/wanigmena/30min"
-            className="py-2 px-4 mt-4 rounded-md bg-black text-white font-semibold inline-block"
+            className="py-2 px-4 mt-4 rounded-md bg-gray-100 hover:bg-gray-300 transition-all duration-200 text-black font-semibold inline-block"
           >
             Book a Consultation
           </a>
