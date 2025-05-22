@@ -4,24 +4,18 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogTrigger,
 } from "@/components/ui/dialog";
-
-import { ReactNode } from "react";
 import { Button } from "./ui/button";
 
-const Dialog = ({
+const DialogBox = ({
   open,
   setOpen,
-  children,
 }: {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
-  children: ReactNode;
 }) => {
   return (
     <UIDialog open={open} onOpenChange={setOpen}>
-      <DialogTrigger className="w-full">{children}</DialogTrigger>
       <DialogContent>
         <DialogHeader>
           <DialogTitle className="text-center">
@@ -40,4 +34,4 @@ const Dialog = ({
   );
 };
 
-export default Dialog;
+export default DialogBox;

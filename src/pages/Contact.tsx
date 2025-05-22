@@ -2,12 +2,12 @@ import Navigation from "../components/Navigation";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import axios from "axios";
-import DialogButton from "../components/DialogButton";
 import Section from "@/components/Section";
 import GoogleMap from "@/components/GoogleMap";
 import PulseLoader from "react-spinners/PulseLoader";
 import { useState } from "react";
 import { BACKEND_BASE_URL } from "../utilities/constants";
+import DialogBox from "../components/DialogBox";
 
 interface FormData {
   name: string;
@@ -38,32 +38,31 @@ function Contact() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent the default form submission behavior
     setIsLoading(true); // Set loading state to true
-    try {
-      const response = await axios.post<FormData>(
-        `${BACKEND_BASE_URL}/api/v1/`,
-        formData,
-        {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        }
-      );
-      setGotError(false);
-      setIsLoading(false);
-      setOpenDialog(true);
-      console.log("Response:", response.data);
-    } catch (error) {
-      setGotError(true);
-      setIsLoading(false);
-      console.error("Error submitting form:", error);
-    }
-
-    // Clear the form
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
+    axios
+      .post<FormData>(`${BACKEND_BASE_URL}/api/v1/`, formData, {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      })
+      .then((response) => {
+        setGotError(false);
+        setIsLoading(false);
+        setOpenDialog(true);
+        console.log("Response:", response.data);
+      })
+      .catch((error) => {
+        setGotError(true);
+        setIsLoading(false);
+        console.error("Error submitting form:", error);
+      })
+      .finally(() => {
+        // Clear the form
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      });
   };
 
   return (
@@ -136,19 +135,16 @@ function Contact() {
                   placeholder="Write your message here..."
                 />
               </div>
-
-              <DialogButton open={openDialog} setOpen={setOpenDialog}>
-                <button
-                  type="submit"
-                  className="w-full py-3 px-4 bg-black text-white font-semibold rounded-md hover:bg-gray-500 transition duration-200"
-                >
-                  {isLoading ? (
-                    <PulseLoader color="#fff" size={10} />
-                  ) : (
-                    "Send Message"
-                  )}
-                </button>
-              </DialogButton>
+              <button
+                type="submit"
+                className="w-full py-3 px-4 bg-black text-white font-semibold rounded-md hover:bg-gray-500 transition duration-200"
+              >
+                {isLoading ? (
+                  <PulseLoader color="#fff" size={10} />
+                ) : (
+                  "Send Message"
+                )}
+              </button>
               <p className="text-red-500 text-center max-w-xs text-xs">
                 {gotError &&
                   "Something went wrong. Please try again later or reach out to us via email."}{" "}
@@ -159,6 +155,7 @@ function Contact() {
             <div className="h-[90%] overflow-hidden rounded-md shadow-md">
               <GoogleMap />
             </div>
+            <DialogBox open={openDialog} setOpen={setOpenDialog} />
           </div>
         </div>
       </Section>
