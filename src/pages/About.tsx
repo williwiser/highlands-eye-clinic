@@ -21,7 +21,7 @@ function About() {
             </p>
           </div>
           <img
-            src="sasu.jpg"
+            src="sasu.webp"
             className="hidden md:block max-w-lg w-full rounded-md max-h-[300px] object-cover"
             alt="Eye Care"
           />
@@ -30,7 +30,7 @@ function About() {
       <Section title="Vision and Mission" bg="slate-200">
         <div className="flex justify-between items-center gap-8 w-full mb-8 bg-slate-300 overflow-hidden rounded-md">
           <img
-            src="opth.jpg"
+            src="opth.webp"
             className="hidden md:block max-w-lg max-h-[300px] w-full object-cover"
             alt="Eye Care"
           />
@@ -58,7 +58,7 @@ function About() {
             </p>
           </div>
           <img
-            src="phoroptor.jpg"
+            src="phoroptor.webp"
             className="hidden md:block max-w-lg max-h-[300px] w-full object-cover"
             alt="Eye Care"
           />
