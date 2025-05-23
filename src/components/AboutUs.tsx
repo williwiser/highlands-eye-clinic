@@ -3,12 +3,12 @@ import SlideIn from "./SlideIn";
 const AboutUs = () => {
   return (
     <section>
-      <div className="container mx-auto max-w-6xl flex flex-col items-center px-2 py-8 h-full te">
+      <div className="container mx-auto max-w-6xl flex flex-col items-center px-2 py-8 h-full">
         <h1 className="font-semibold text-5xl">Who We Are</h1>
         <hr className="border-slate-500 border-2 w-56 my-8 rounded-md"></hr>
         <div className="flex justify-center md:justify-between items-center gap-8 w-full">
           <SlideIn direction="left">
-            <div className="flex flex-col items-center md:items-start text-center md:text-left">
+            <div className="flex flex-col items-center md:items-start text-center md:text-left w-full">
               <p className="max-w-xl text-gray-600">
                 Located in the heart of Mutare, our eye clinic is dedicated to
                 providing expert eye care with a personal touch. Led by a

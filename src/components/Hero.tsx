@@ -3,14 +3,14 @@ import SlideIn from "./SlideIn";
 const Hero = () => {
   return (
     <header
-      className="h-[95dvh] overflow-hidden "
+      className="h-[90dvh] max-h-[700px] overflow-hidden"
       style={{
         backgroundColor: "#dbe2e5",
         backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236797c1' fill-opacity='0.36' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E")`,
       }}
     >
       <div className="container mx-auto max-w-6xl flex justify-between items-center pt-24 px-2 h-full">
-        <div className="flex flex-col text-center lg:text-left items-center lg:items-start gap-5 flex-1">
+        <div className="flex flex-col text-center lg:text-left items-center justify-center lg:items-start gap-5 flex-1 h-full">
           <SlideIn direction="left">
             <h1 className="text-6xl text-pretty rubik-600 text-stone-800">
               Where Your Vision Is Our Mission.
